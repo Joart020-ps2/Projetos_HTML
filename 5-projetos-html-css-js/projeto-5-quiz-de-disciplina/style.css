@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px;
+  font-family: Arial, sans-serif; color: #1e293b; background: #eef2ff;
+}
+.painel {
+  width: min(100%, 600px); padding: 32px; background: white; border-radius: 18px;
+  box-shadow: 0 15px 40px #1e293b18;
+}
+.etiqueta { color: #6366f1; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
+h1 { margin: 5px 0 28px; }
+.linha-progresso { display: flex; justify-content: space-between; gap: 12px; color: #64748b; font-size: 13px; }
+.trilho { height: 8px; margin: 12px 0 26px; background: #e2e8f0; border-radius: 10px; overflow: hidden; }
+#barraProgresso { height: 100%; width: 0; background: #6366f1; transition: width .25s; }
+h2 { font-size: 20px; line-height: 1.4; }
+.alternativas { display: grid; gap: 10px; margin: 22px 0; }
+.alternativa {
+  width: 100%; padding: 13px; text-align: left; border: 1px solid #cbd5e1;
+  border-radius: 9px; background: white; color: #1e293b; cursor: pointer;
+}
+.alternativa:hover:not(:disabled) { border-color: #6366f1; background: #eef2ff; }
+.alternativa:disabled { cursor: default; opacity: 1; }
+.alternativa.correta { border-color: #16a34a; background: #dcfce7; }
+.alternativa.errada { border-color: #dc2626; background: #fee2e2; }
+#feedback { min-height: 24px; font-weight: bold; }
+button#botaoProxima, #botaoReiniciar {
+  padding: 12px 18px; border: 0; border-radius: 9px; color: white;
+  background: #4f46e5; font-weight: bold; cursor: pointer;
+}
+button:disabled { opacity: .45; cursor: not-allowed; }
+.resultado-final { padding: 24px; text-align: center; background: #eef2ff; border-radius: 12px; }
+@media (max-width: 420px) { .painel { padding: 22px; } }
