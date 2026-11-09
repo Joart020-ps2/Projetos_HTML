@@ -18,16 +18,3 @@ Repositório com cinco projetos para praticar os fundamentos de desenvolvimento 
 4. Para editar o código, abra a pasta no Visual Studio Code.
 
 Não é necessário instalar dependências ou usar um servidor.
-
-## Personalizações sugeridas
-
-- Troque o nome, a descrição e os interesses do cartão de apresentação.
-- Adicione novas frases ao array do gerador.
-- Ajuste os critérios de aprovação na calculadora conforme as regras da sua escola.
-- Experimente adicionar uma opção para limpar todas as tarefas.
-- Altere as perguntas e alternativas do quiz para o conteúdo da disciplina desejada.
-
-## Observações
-
-- Na calculadora, foram usados critérios de exemplo: média igual ou superior a 7 = aprovado; de 5 até menos de 7 = recuperação; abaixo de 5 = reprovado. Ajuste esses valores se sua escola utilizar outros critérios.
-- O quiz vem com perguntas introdutórias sobre HTML, CSS e JavaScript. Você pode substituir o conteúdo do array `perguntas` em `projeto-5-quiz-de-disciplina/script.js`.
